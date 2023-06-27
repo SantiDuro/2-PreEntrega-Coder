@@ -1,0 +1,520 @@
+@font-face {
+    font-family: "Montserrat-regular";
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);    
+}
+@font-face {
+    font-family: "Montserrat-bold";
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);    
+}
+*{font-family: "Montserrat";}
+body{
+    margin: 0;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "textoe textoe textoe textoe"
+    "acts acts acts acts"
+    "multimedia multimedia multimedia multimedia"
+    "footer footer footer footer";
+}
+/*   Header   */
+header{
+    background-color: rgb(227, 227, 227);
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    grid-area: header;
+    justify-content: space-between;
+}
+/* header div{
+    
+    height: 150px;
+    margin: 0px;
+} */
+#logoprincipal{
+    
+    height: 130px;
+    padding: 10px;
+    margin-left: 20px;
+}
+/* nav ul li{
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: right;
+    margin-right: 15px;
+    display: inline;
+    font-size: 16px;
+} */
+/* a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    margin: 0px;
+    padding-top: 50px;
+    padding-left: 400px;
+} */
+
+
+/*    Main   */
+.mainIndex{
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: textoe;
+}
+h1{
+
+    width: 500px;
+    height: 250px;
+    font-size: 65px;
+    padding-top: 30px;
+    padding-left: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.infoHeader{
+    background-image: url(../img/pexels-leon-ardho-2468366.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.texto-explicativo{
+    
+    width: 50%;
+    height: 200px;
+    font-size: 21px;
+    padding-left: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(0, 0, 0);
+}
+.multimedia{
+    width: 510px;
+    height: 200px;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;;
+    border-right: solid 2px black;
+    grid-area: multimedia;
+}
+.mapa{
+    width: 510px;
+    height: 200px;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;;
+    border-right: solid 2px black;
+    grid-area: multimedia;
+}
+div h3{  
+    font-size: 40px;
+    padding-left: 20px;
+}
+main div a{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.crossfit{
+    text-align: left;
+    height: 300px;
+    width: 490px;
+    background-image: url(../img/backfccf.jpg);
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    grid-area: fcrossfit;
+}
+.fotoCrossfit{
+    height: 300px;
+    width: 490px;
+    padding-bottom: 150px;
+}
+.musculacion{
+    text-align: left;
+    height: 300px;
+    width: 490px;
+    background-image: url(../img/gimnasio.jpg);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    grid-area: fmuscu;
+}
+.gap{
+    text-align: left;
+    height: 300px;
+    width: 490px;
+    background-image: url(../img/gap.jpg);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-top: 50px;
+    grid-area: fgap;
+}
+.boxeo{
+    text-align: left;
+    height: 300px;
+    width: 490px;
+    background-image: url(../img/boxeo.jpg);
+    background-repeat: no-repeat;   
+    border-radius: 10px;
+    margin-top: 50px;
+    grid-area: fboxeo;
+}
+.LineaSuperior{
+    background-color: black;
+    display: grid;
+    grid-template-areas: 
+    "fcrossfit fmuscu"
+    "fgap fboxeo";
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    column-gap: 5%;
+    grid-area: acts;
+}
+.videos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.ubicacion{
+    text-align: right;
+    
+}
+h3{
+    display: inline;
+    margin-left: 30px;
+    margin-top: 15px;
+    
+}
+.acts1{
+    width: 300px;
+    padding-top: 32px;
+    padding-left: 20px;
+}
+
+
+
+
+/*   Actividades   */
+
+.mainacts{
+    background-color: black;
+/*     display: grid;
+    grid-template-rows: repeat(4,25%);*/
+    grid-area: acts; 
+}
+.redondear{
+    border-radius: 10px;
+    height: 275px;
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.explicaciones{
+    display: flex;
+}
+.infoact{
+    padding-left: 30px;
+    padding-top: 30px;
+    color: aliceblue;
+}
+div h4{
+    font-size: 35px;
+}
+
+
+
+
+/*   Planes   */
+
+h2{
+    font-size: 40px;
+    margin-bottom: 75px;
+    padding-left: 50px;
+}
+.tituloplanes{
+    font-size: 32px;
+    text-align: left;  
+    margin-bottom: 25px;        
+}
+.explicacionPlan{  
+    text-align: center;
+    width: 1100px;
+    margin-top: 0;
+}
+.tipoPlan{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.mainplanes{
+    background-image: url(../img/recepcion.jpg);
+    background-size: cover;
+    margin-top: 0px;
+    padding-top: 50px;
+    margin-bottom: 0;
+    grid-area: acts;
+}
+.aclaracion{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+/*   Footer   */
+
+footer{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    color: rgb(193, 193, 193);
+    margin-top: 0;
+    grid-area: footer;
+}
+
+
+
+/*   Contacto   */
+
+.mainContacto{
+    margin-top: 0;
+    padding-top: 50px;
+}
+form{
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-bottom: 50px;
+}
+
+/*    Movil   */
+
+@media (max-width: 576px){
+    body{
+        width: 100%; 
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "textoe"
+        "acts"
+        "multimedia"
+        "mapa"
+        "footer";
+     
+    }
+
+    .mainIndex{
+        grid-template-columns: 100%;
+        justify-items: center;
+    }
+    .LineaSuperior{
+        grid-template-columns:100%;
+        grid-template-areas:
+        "fcrossfit"
+        "fmuscu"
+        "fgap"  
+        "fboxeo";
+        justify-items: center;
+        row-gap: 8px;
+    }
+    .infoHeader{
+        background-image: url(../img/pexels-leon-ardho-2468366.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        text-align: center;
+    }
+
+    .multimedia{
+        grid-template-columns: 100%;
+        grid-area: multimedia;
+    }
+    .mapa{
+        grid-template-columns: 100%;
+        grid-area: mapa;
+    }
+    .header{
+        grid-template-columns: 100%;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    nav ul li{
+        display: block;
+    }
+  
+    .footer{
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+    .texto-explicativo{
+        width:fit-content;
+        height: fit-content;
+        display: none;
+    }
+    .videos{
+        grid-template-columns: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .crossfit{
+        text-align: center;
+        grid-area: fcrossfit;
+    }
+    .gap{
+        text-align: center;
+        margin-top: 0;
+    }
+    .boxeo{
+        text-align: center;
+        margin-top: 0;
+    }
+    .musculacion{
+        text-align: center;
+    }
+    .acts1{
+        text-align: center;
+        width: auto;
+        font-size: 24px;
+        }
+  
+    nav{
+        margin: 0px;
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+    #logoprincipal{
+    
+        height: 100%;
+        padding: 10px;
+        margin-left: 20px;
+    }
+    h3{
+    display: block;
+    margin-top: 15px;
+    }
+    .ubicacion{
+        text-align: center;
+    }
+
+    /*  Actividades  */
+
+    .mainacts{
+        background-color: black;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-area: acts;
+        justify-items: center;
+    }
+    .redondear{
+        display: none;
+
+    }
+    .explicaciones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .infoact{
+        padding-left: 0;
+        padding-top: 0;
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    div h4{
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .mainacts{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .infoact__descripcion{
+        text-align: center;
+        font-size: 28px;
+        width: 450px;
+
+    }
+    
+
+    /*   Contacto   */
+
+    .mainContacto{
+        width: 100%;
+    }
+
+
+    /*   Planes   */
+    .mainplanes{
+        background-image: none;
+        background-color: rgb(120, 120, 120);     
+        margin-top: 0px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        grid-area: acts;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        display: none;
+    }
+    .tipoPlan{
+        background-color: aquamarine;
+        width: 550px;
+        margin: 5px;
+        height: fit-content;
+        border-radius: 10px;
+    }
+    .explicacionPlan{  
+        text-align: center;
+        width: 540px;
+        margin-top: 0;
+        font-size: 30px;
+    }
+    .aclaracion{
+        width: 570px;
+    }
+    .tituloplanes{
+        text-align: left;
+        font-size: 40px;
+    }
+    .tipoPlan__paselions{
+        background-color: rgb(126, 184, 243);
+    }
+    .tipoPlan__24{
+        background-color: rgb(60, 115, 174);
+    }
+    .tipoPlan__12{
+        background-color: beige;
+    }
+    .tipoPlan__8{
+        background-color: lightblue;
+    }
+    .tipoPlan__musculacion{
+        background-color: rgb(43, 150, 226);
+    }
+}
+
