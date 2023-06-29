@@ -203,22 +203,23 @@ h3{
 
 /*   Actividades   */
 
-.mainacts{
+  .mainacts{
     background-color: black;
-/*     display: grid;
-    grid-template-rows: repeat(4,25%);*/
+    
+   
     grid-area: acts; 
-}
-.redondear{
+} 
+/* .redondear{
     border-radius: 10px;
     height: 275px;
     width: 400px;
     margin-left: 50px;
     margin-top: 50px;
-}
-.explicaciones{
+} */
+/* .explicaciones{
     display: flex;
-}
+} */
+
 .infoact{
     padding-left: 30px;
     padding-top: 30px;
@@ -226,9 +227,13 @@ h3{
 }
 div h4{
     font-size: 35px;
+} 
+
+.foto-gimnasio{
+    background-color: azure;
+    height: 200px;
+    margin-top: 25px;
 }
-
-
 
 
 /*   Planes   */
