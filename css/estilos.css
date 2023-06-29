@@ -82,12 +82,10 @@ h1{
     width: 100%;
 }
 .texto-explicativo{
-    
-    width: 50%;
     height: 200px;
     font-size: 21px;
     padding-left: 35px;
-    margin-top: 0;
+    margin-top: 25px;
     margin-bottom: 0;
     color: rgb(0, 0, 0);
 }
@@ -99,6 +97,7 @@ h1{
     border-left: solid 2px black;;
     border-right: solid 2px black;
     grid-area: multimedia;
+    margin-left: 25px;
 }
 .mapa{
     width: 510px;
@@ -178,13 +177,15 @@ main div a{
 }
 .videos{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     margin-top: 0px;
     margin-bottom: 20px;
 }
 .ubicacion{
+    font-size: 20px;
     text-align: right;
-    
+
 }
 h3{
     display: inline;
@@ -317,7 +318,12 @@ form{
         "footer";
      
     }
-
+    h1{
+    color: rgb(172, 178, 183);
+    padding: 25px;
+    margin: auto;
+    font-size: 60px;
+    }
     .mainIndex{
         grid-template-columns: 100%;
         justify-items: center;
@@ -404,7 +410,7 @@ form{
     }
     #logoprincipal{
     
-        height: 100%;
+        width: 100%;
         padding: 10px;
         margin-left: 20px;
     }
