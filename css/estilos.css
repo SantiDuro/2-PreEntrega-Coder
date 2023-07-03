@@ -66,7 +66,7 @@ nav{
     grid-area: textoe;
 }
 h1{
-
+    color: rgb(129, 129, 129);
     width: 500px;
     height: 250px;
     font-size: 65px;
@@ -190,7 +190,7 @@ main div a{
 }
 h3{
     display: inline;
-    margin-left: 30px;
+    
     margin-top: 15px;
     
 }
@@ -275,6 +275,8 @@ h2{
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
@@ -296,6 +298,7 @@ footer{
 .mainContacto{
     margin-top: 0;
     padding-top: 50px;
+    margin-left: 35px;
 }
 form{
     margin-top: 50px;
@@ -310,13 +313,6 @@ form{
         width: 100%; 
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "header"
-        "textoe"
-        "acts"
-        "multimedia"
-        "mapa"
-        "footer";
      
     }
     h1{
@@ -371,6 +367,7 @@ form{
         grid-template-columns: 100%;
         align-items: center;
         justify-items: center;
+        width: 400px;
     }
     .texto-explicativo{
         width:fit-content;
@@ -418,6 +415,7 @@ form{
     h3{
     display: block;
     margin-top: 15px;
+    
     }
     .ubicacion{
         text-align: center;
@@ -449,6 +447,7 @@ form{
         flex-direction: column;
         justify-content: center;
 
+
     }
     div h4{
         font-size: 50px;
@@ -465,15 +464,21 @@ form{
     .infoact__descripcion{
         text-align: center;
         font-size: 28px;
-        width: 450px;
 
+    }
+    .row{
+        margin-bottom: 10%;
     }
     
 
-    /*   Contacto   */
+    /*   Contacto y Se parte  */
 
     .mainContacto{
         width: 100%;
+    }
+    .h3separte{
+        width: 85%;
+        text-align: center;
     }
 
 
@@ -495,16 +500,15 @@ form{
     }
     .tipoPlan{
         background-color: aquamarine;
-        width: 550px;
+        width: 90%;
         margin: 5px;
         height: fit-content;
         border-radius: 10px;
     }
     .explicacionPlan{  
         text-align: center;
-        width: 540px;
+        width: 90%;
         margin-top: 0;
-        font-size: 30px;
     }
     .aclaracion{
         width: 570px;
