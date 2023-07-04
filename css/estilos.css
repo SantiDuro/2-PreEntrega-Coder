@@ -195,9 +195,20 @@ h3{
     
 }
 .acts1{
-    width: 300px;
-    padding-top: 32px;
+    height: 100%;
+    width: 85%;
+    padding-top: 10px;
     padding-left: 20px;
+    font-size: 20px;
+}
+.acts1 :hover{
+    font-size: 25px;
+    width: 100%;
+    font-style: italic;
+}
+.actname{
+    text-align: center;
+    padding: 5%;
 }
 
 
@@ -320,6 +331,7 @@ form{
     padding: 25px;
     margin: auto;
     font-size: 60px;
+    width: 80%;
     }
     .mainIndex{
         grid-template-columns: 100%;
@@ -383,22 +395,27 @@ form{
     .crossfit{
         text-align: center;
         grid-area: fcrossfit;
+        width: 80%;
     }
     .gap{
         text-align: center;
         margin-top: 0;
+        width: 80%;
     }
     .boxeo{
         text-align: center;
         margin-top: 0;
+        width: 80%;
     }
     .musculacion{
         text-align: center;
+        width: 80%;
     }
     .acts1{
         text-align: center;
         width: auto;
         font-size: 24px;
+        padding: 20px;
         }
   
     nav{
@@ -419,6 +436,9 @@ form{
     }
     .ubicacion{
         text-align: center;
+    }
+    .actname{
+        padding-bottom: 0;
     }
 
     /*  Actividades  */
