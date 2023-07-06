@@ -27,36 +27,13 @@ header{
     grid-area: header;
     justify-content: space-between;
 }
-/* header div{
-    
-    height: 150px;
-    margin: 0px;
-} */
+
 #logoprincipal{
     
     height: 130px;
     padding: 10px;
     margin-left: 20px;
 }
-/* nav ul li{
-    color: black;
-    text-decoration: none;
-    list-style-type: none;
-    text-align: right;
-    margin-right: 15px;
-    display: inline;
-    font-size: 16px;
-} */
-/* a{
-    text-decoration: none;
-    color: black;
-}
-nav{
-    margin: 0px;
-    padding-top: 50px;
-    padding-left: 400px;
-} */
-
 
 /*    Main   */
 .mainIndex{
@@ -186,13 +163,10 @@ main div a{
 .ubicacion{
     font-size: 20px;
     text-align: right;
-
 }
 h3{
-    display: inline;
-    
+    display: inline;    
     margin-top: 15px;
-    
 }
 .acts1{
     height: 100%;
@@ -212,27 +186,12 @@ h3{
 }
 
 
-
-
 /*   Actividades   */
 
   .mainacts{
     background-color: black;
-    
-   
     grid-area: acts; 
 } 
-/* .redondear{
-    border-radius: 10px;
-    height: 275px;
-    width: 400px;
-    margin-left: 50px;
-    margin-top: 50px;
-} */
-/* .explicaciones{
-    display: flex;
-} */
-
 .infoact{
     padding-left: 30px;
     padding-top: 30px;
@@ -241,11 +200,29 @@ h3{
 div h4{
     font-size: 35px;
 } 
-
-.foto-gimnasio{
-    background-color: azure;
+.foto-gap{
     height: 200px;
     margin-top: 25px;
+    background-image: url(../img/gap\ actividades\ desktop.jpg);
+    background-repeat: no-repeat;
+}
+.foto-crossfit{
+    height: 200px;
+    margin-top: 25px;
+    background-image: url(../img/crossfit\ atividades\ desktop.jpg);
+    background-repeat: no-repeat;
+}
+.foto-gimnasio{
+    height: 200px;
+    margin-top: 25px;
+    background-image: url(../img/musculacion\ actividades\ desktop.jpg);
+    background-repeat: no-repeat;
+}
+.foto-boxeo{
+    height: 200px;
+    margin-top: 25px;
+    background-image: url(../img/boxeo\ actividades\ resp.jpg);
+    background-repeat: no-repeat;
 }
 
 
@@ -302,8 +279,6 @@ footer{
     grid-area: footer;
 }
 
-
-
 /*   Contacto   */
 
 .mainContacto{
@@ -324,7 +299,6 @@ form{
         width: 100%; 
         display: grid;
         grid-template-columns: 1fr;
-     
     }
     h1{
     color: rgb(172, 178, 183);
@@ -354,7 +328,6 @@ form{
         width: 100%;
         text-align: center;
     }
-
     .multimedia{
         grid-template-columns: 100%;
         grid-area: multimedia;
@@ -417,7 +390,6 @@ form{
         font-size: 24px;
         padding: 20px;
         }
-  
     nav{
         margin: 0px;
         padding-top: 50px;
@@ -431,8 +403,7 @@ form{
     }
     h3{
     display: block;
-    margin-top: 15px;
-    
+    margin-top: 15px;  
     }
     .ubicacion{
         text-align: center;
@@ -452,7 +423,6 @@ form{
     }
     .redondear{
         display: none;
-
     }
     .explicaciones{
         display: flex;
@@ -466,8 +436,6 @@ form{
         display: flex;
         flex-direction: column;
         justify-content: center;
-
-
     }
     div h4{
         font-size: 50px;
@@ -484,7 +452,6 @@ form{
     .infoact__descripcion{
         text-align: center;
         font-size: 28px;
-
     }
     .row{
         margin-bottom: 10%;
