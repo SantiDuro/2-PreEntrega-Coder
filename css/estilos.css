@@ -172,13 +172,16 @@ h3{
     height: 100%;
     width: 85%;
     padding-top: 10px;
-    padding-left: 20px;
+    padding-left: 15%;
     font-size: 20px;
 }
 .acts1 :hover{
-    font-size: 25px;
+    transform: scale(1.4);
     width: 100%;
     font-style: italic;
+    cursor: pointer;
+    text-align: center;
+    background: radial-gradient(rgba(90, 147, 185, 0.655), rgba(198, 198, 198, 0.632));
 }
 .actname{
     text-align: center;
@@ -290,6 +293,13 @@ form{
     margin-top: 50px;
     margin-left: 75px;
     margin-bottom: 50px;
+}
+.button{
+    background: linear-gradient(to right, rgb(35, 148, 253), rgb(151, 179, 211));
+}
+.button:hover{
+    background: linear-gradient(to right, blue, rgb(49, 41, 199));
+    box-shadow: 25px;
 }
 
 /*    Movil   */
