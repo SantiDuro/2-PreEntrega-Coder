@@ -261,6 +261,7 @@ h2{
     grid-area: acts;
 }
 .aclaracion{
+    width: 90%;
     padding-bottom: 50px;
     padding-top: 50px;
     text-align: center;
@@ -471,13 +472,16 @@ form{
     /*   Contacto y Se parte  */
 
     .mainContacto{
-        width: 100%;
+        width: 90%;
     }
     .h3separte{
-        width: 85%;
-        text-align: center;
+        width: 90%;
+        text-align: left;
     }
-
+    form{
+        text-align: center;
+        margin-left: 1%;
+    }
 
     /*   Planes   */
     .mainplanes{
@@ -508,7 +512,7 @@ form{
         margin-top: 0;
     }
     .aclaracion{
-        width: 570px;
+        width: 90%;
     }
     .tituloplanes{
         text-align: left;
