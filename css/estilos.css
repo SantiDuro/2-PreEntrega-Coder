@@ -261,10 +261,24 @@ h2{
     align-content: center;
     align-items: center;
     width: 85%;
-    background-color: rgb(163, 163, 163);
     margin-bottom: 2%;
     margin-left: 4%;
     border-radius: 8px;
+}
+.tipoPlan__paselions{
+    background-color: rgb(126, 184, 243);
+}
+.tipoPlan__24{
+    background-color: rgb(60, 115, 174);
+}
+.tipoPlan__12{
+    background-color: beige;
+}
+.tipoPlan__8{
+    background-color: lightblue;
+}
+.tipoPlan__musculacion{
+    background-color: rgb(43, 150, 226);
 }
 .mainplanes{
     background-color: black;
