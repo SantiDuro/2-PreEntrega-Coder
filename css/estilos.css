@@ -268,7 +268,6 @@ h2{
 }
 .mainplanes{
     background-color: black;
-    background-size: cover;
     margin-top: 0px;
     padding-top: 50px;
     margin-bottom: 0;
@@ -317,6 +316,10 @@ form{
     background: linear-gradient(to right, blue, rgb(49, 41, 199));
     box-shadow: 25px;
 }
+.CajaForm{
+    border: 2px solid rgb(45, 101, 185);
+    border-radius: 5px;
+}
 
 /*    Movil   */
 
@@ -328,10 +331,17 @@ form{
     }
     h1{
     color: rgb(172, 178, 183);
-    padding: 25px;
-    margin: auto;
-    font-size: 60px;
+    
+    padding-bottom: 5px;
+    
+    margin-bottom: 0;
+    font-size: 45px;
     width: 80%;
+    }
+    .ContenedorAnimacion{
+        overflow-x: hidden;
+        max-width: 100%;
+
     }
     .mainIndex{
         grid-template-columns: 100%;
@@ -358,6 +368,7 @@ form{
         grid-template-columns: 100%;
         grid-area: multimedia;
         width: 90%;
+        height: 150px;
     }
     .mapa{
         grid-template-columns: 100%;
@@ -380,7 +391,7 @@ form{
         grid-template-columns: 100%;
         align-items: center;
         justify-items: center;
-        width: 400px;
+        width: 100%;
     }
     .texto-explicativo{
         width:fit-content;
@@ -415,9 +426,13 @@ form{
     .acts1{
         text-align: center;
         width: auto;
-        font-size: 24px;
+        font-size: 16px;
         padding: 20px;
         }
+    .acts1 :hover{
+        width: 75%;
+        margin-left: 13%;
+    }
     nav{
         margin: 0px;
         padding-top: 50px;
@@ -466,10 +481,13 @@ form{
         justify-content: center;
     }
     div h4{
-        font-size: 50px;
+        font-size: 40px;
         text-align: center;
         margin-bottom: 5px;
-    }
+        }
+    div h3{
+            font-size: 30px;
+        }
     .mainacts{
         background-color: black;
         display: flex;
@@ -479,7 +497,7 @@ form{
     }
     .infoact__descripcion{
         text-align: center;
-        font-size: 28px;
+        font-size: 20x;
     }
     .row{
         margin-bottom: 10%;
@@ -503,7 +521,7 @@ form{
     /*   Planes   */
     .mainplanes{
         background-image: none;
-        background-color: rgb(120, 120, 120);     
+        background-color: rgb(0, 0, 0);     
         margin-top: 0px;
         padding-top: 15px;
         margin-bottom: 0;
