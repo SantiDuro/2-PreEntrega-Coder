@@ -187,7 +187,36 @@ h3{
     text-align: center;
     padding: 5%;
 }
+.LogoWhatsapp{
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    /* transition: all 1s; */
+    animation-name: logo_whatsapp;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0;
+}
+/* .LogoWhatsapp:hover{
+    transform: scale(1.5);
+} */
+@keyframes logo_whatsapp{
+    0%{transform: scale(1);}
+    12%{transform: scale(1.12);}
+    25%{transform: scale(1.25);}
+    37%{transform: scale(1.37);}
+    50%{transform: scale(1.5);
+        filter: brightness(1.75);}
+    62%{transform: scale(1.37);}
+    75%{transform: scale(1.25);}
+    88%{transform: scale(1.12);}
+    100%{transform: scale(1);
+        filter: brightness(0,8);}
 
+}
 
 /*   Actividades   */
 
