@@ -202,5 +202,27 @@
                 justify-items: center;
                 row-gap: 8px;
             }
-    }   
+        .card{
+                background-color: rgb(171, 171, 171);
+                padding: 0;
+                transition: all 1s;
+                width: 75%;
+            &:hover{
+                    transform: scale(1.1);
+                }
+            .card-title{
+                    color: black;
+                    font-size: 34px;
+                }
+            .card-text{
+                    color: black;
+                    font-size: 12px;
+                    margin-top: 5%;
+                    &:hover{
+                        background: radial-gradient(ellipse, rgba(65, 171, 232, 0.423), rgba(92, 198, 233, 0));
+                        font-size: 16px;
+                    }
+                    }    
+                }
+    } 
 }

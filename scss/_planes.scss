@@ -16,11 +16,6 @@
         margin-bottom: 0;
         text-align: left;
     }
-    h2{
-        font-size: 40px;
-        margin-bottom: 75px;
-        padding-left: 50px;
-    }
     .tituloplanes{
         font-size: 32px;
         text-align: left;  
@@ -85,9 +80,22 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    h2{
-        display: none;
+        h1 {
+            color: rgb(129, 129, 129);
+            /* width: 500px; */
+            height: 100%;
+            font-size: 50px;
+            padding-top: 30px;
+            padding-left: 35px;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: left;
+        }
+        .ContenedorAnimacion{
+            overflow-x: hidden;
+            max-width: $full-width;
+    
+        }
     }
     .tipoPlan{
         background-color: aquamarine;

@@ -78,6 +78,11 @@ div h4{
             margin-bottom: 0;
             text-align: left;
         }
+        .ContenedorAnimacion{
+            overflow-x: hidden;
+            max-width: $full-width;
+    
+        }
     }
     .redondear{
         display: none;

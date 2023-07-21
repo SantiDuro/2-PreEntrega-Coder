@@ -85,6 +85,10 @@ div h4 {
     margin-bottom: 0;
     text-align: left;
   }
+  .mainacts .ContenedorAnimacion {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
   .redondear {
     display: none;
   }
@@ -142,11 +146,6 @@ div h4 {
   margin-top: 0;
   margin-bottom: 0;
   text-align: left;
-}
-.mainplanes h2 {
-  font-size: 40px;
-  margin-bottom: 75px;
-  padding-left: 50px;
 }
 .mainplanes .tituloplanes {
   font-size: 32px;
@@ -210,8 +209,20 @@ div h4 {
     justify-content: center;
     align-items: center;
   }
-  h2 {
-    display: none;
+  .mainplanes h1 {
+    color: rgb(129, 129, 129);
+    /* width: 500px; */
+    height: 100%;
+    font-size: 50px;
+    padding-top: 30px;
+    padding-left: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .mainplanes .ContenedorAnimacion {
+    overflow-x: hidden;
+    max-width: 100%;
   }
   .tipoPlan {
     background-color: aquamarine;
@@ -490,6 +501,28 @@ form {
     justify-items: center;
     row-gap: 8px;
   }
+  .mainIndex .card {
+    background-color: rgb(171, 171, 171);
+    padding: 0;
+    transition: all 1s;
+    width: 75%;
+  }
+  .mainIndex .card:hover {
+    transform: scale(1.1);
+  }
+  .mainIndex .card .card-title {
+    color: black;
+    font-size: 34px;
+  }
+  .mainIndex .card .card-text {
+    color: black;
+    font-size: 12px;
+    margin-top: 5%;
+  }
+  .mainIndex .card .card-text:hover {
+    background: radial-gradient(ellipse, rgba(65, 171, 232, 0.423), rgba(92, 198, 233, 0));
+    font-size: 16px;
+  }
 }
 @font-face {
   font-family: "Montserrat-regular";
@@ -531,13 +564,16 @@ header #logoprincipal {
   position: fixed;
   bottom: 100px;
   right: 100px;
-  /* transition: all 1s; */
   animation-name: logo_whatsapp;
-  animation-iteration-count: 4;
+  animation-iteration-count: 3;
   animation-timing-function: ease-in;
   animation-duration: 1.5s;
   animation-delay: 0;
   box-shadow: 5px;
+  transition: all 0.5s;
+}
+.LogoWhatsapp:hover {
+  transform: scale(1.5);
 }
 
 @keyframes logo_whatsapp {
@@ -607,12 +643,13 @@ footer {
     animation-delay: 0;
     box-shadow: 5px;
   }
-  .footer {
+  footer {
     display: grid;
     grid-template-columns: 100%;
     align-items: center;
     justify-items: center;
     width: 100%;
+    font-size: 12px;
   }
   #logoprincipal {
     width: 100%;
