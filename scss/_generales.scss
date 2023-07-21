@@ -42,9 +42,32 @@ header{
         filter: brightness(0,8);}
 
 }
+/*   Footer   */
 
+footer{
+    background-color: $primary-background;
+    padding: 10px;
+    color: rgb(193, 193, 193);
+    margin-top: 0;
+    grid-area: footer;
+}
 
 @media (max-width: 576px){
+    .header{
+        grid-template-columns: 100%;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    body{
+        width: 100%; 
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
     .LogoWhatsapp{
         height: 40px;
         width: 40px;
@@ -59,21 +82,21 @@ header{
         animation-delay: 0;
         box-shadow: 5px;
     }
-    body{
-        width: 100%; 
+    .footer{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+    }
+    #logoprincipal{
+    
+        width: 100%;
+        padding: 10px;
+        margin-left: 20px;
     }
 }
 
 
 
-/*   Footer   */
 
-footer{
-    background-color: $primary-background;
-    padding: 10px;
-    color: rgb(193, 193, 193);
-    margin-top: 0;
-    grid-area: footer;
-}

@@ -19,7 +19,7 @@
         background-image: url(../img/pexels-leon-ardho-2468366.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        width: 100%;
+        width: $full-width;
         .texto-explicativo{
             padding: 1%;
             margin: 1%;
@@ -61,19 +61,19 @@
         }
         .multimedia{
             height: 200px;
-            border-top: solid 2px rgb(14, 12, 12);
-            border-bottom: solid 2px black;
-            border-left: solid 2px black;;
-            border-right: solid 2px black;
+            border-top: solid 2px $primary-background;
+            border-bottom: solid 2px $primary-background;
+            border-left: solid 2px $primary-background;;
+            border-right: solid 2px $primary-background;
             grid-area: multimedia;
         }
         .mapa{
             width: 510px;
             height: 200px;
-            border-top: solid 2px black;
-            border-bottom: solid 2px black;
-            border-left: solid 2px black;;
-            border-right: solid 2px black;
+            border-top: solid 2px $primary-background;
+            border-bottom: solid 2px $primary-background;
+            border-left: solid 2px $primary-background;
+            border-right: solid 2px $primary-background;
             grid-area: multimedia;
         }
     }
@@ -143,8 +143,13 @@
             background-image: url(../img/pexels-leon-ardho-2468366.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            width: 100%;
+            width: $full-width;
             text-align: center;
+            .ContenedorAnimacion{
+                overflow-x: hidden;
+                max-width: $full-width;
+        
+            }
             .texto-explicativo{
                 width:fit-content;
                 height: fit-content;
@@ -157,7 +162,7 @@
                 align-items: center;
                 justify-content: center;
                 div{
-                    width: 100%;
+                    width: $full-width;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -197,61 +202,5 @@
                 justify-items: center;
                 row-gap: 8px;
             }
-    }
-    
-    .ContenedorAnimacion{
-        overflow-x: hidden;
-        max-width: 100%;
-
-    }
-    
-    
-    
-    
-    .header{
-        grid-template-columns: 100%;
-        width: 100%;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    nav ul li{
-        display: block;
-    }
-  
-    .footer{
-        display: grid;
-        grid-template-columns: 100%;
-        align-items: center;
-        justify-items: center;
-        width: 100%;
-    }
-    
-    
-    
-    .acts1{
-        text-align: center;
-        width: auto;
-        font-size: 16px;
-        padding: 20px;
-        }
-    .acts1 :hover{
-        width: 75%;
-        margin-left: 13%;
-    }
-    nav{
-        margin: 0px;
-        padding-top: 50px;
-        padding-left: 50px;
-    }
-    #logoprincipal{
-    
-        width: 100%;
-        padding: 10px;
-        margin-left: 20px;
-    }
-    
-    .actname{
-        padding-bottom: 0;
-    }
+    }   
 }
