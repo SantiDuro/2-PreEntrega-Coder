@@ -1,0 +1,653 @@
+@font-face {
+    font-family: "Montserrat-regular";
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);    
+}
+@font-face {
+    font-family: "Montserrat-bold";
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);    
+}
+*{font-family: "Montserrat";}
+body{
+    margin: 0;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "textoe textoe textoe textoe"
+    "acts acts acts acts"
+    "multimedia multimedia multimedia multimedia"
+    "footer footer footer footer";
+}
+/*   Header   */
+header{
+    background-color: rgb(227, 227, 227);
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    grid-area: header;
+    justify-content: space-between;
+}
+
+#logoprincipal{
+    
+    height: 130px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+/*    Main   */
+.mainIndex{
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: textoe;
+}
+h1{
+    color: rgb(129, 129, 129);
+    width: 500px;
+    height: 250px;
+    font-size: 65px;
+    padding-top: 30px;
+    padding-left: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+.infoHeader{
+    background-image: url(../img/pexels-leon-ardho-2468366.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.texto-explicativo{
+    height: 200px;
+    width: 85%;
+    font-size: 21px;
+    padding-left: 35px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    color: rgb(0, 0, 0);
+}
+.multimedia{
+    width: 510px;
+    height: 200px;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;;
+    border-right: solid 2px black;
+    grid-area: multimedia;
+    margin-left: 25px;
+}
+.mapa{
+    width: 510px;
+    height: 200px;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;;
+    border-right: solid 2px black;
+    grid-area: multimedia;
+}
+div h3{  
+    font-size: 40px;
+    padding-left: 20px;
+}
+main div a{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.card{
+    background-color: rgb(171, 171, 171);
+    padding: 0;
+    transition: all 1s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card-title{
+    color: black;
+    font-size: 34px;
+}
+.card-text{
+    color: black;
+    font-size: 18px;
+    margin-top: 9%;
+}
+.card-text:hover{
+    background: radial-gradient(ellipse, rgba(65, 171, 232, 0.423), rgba(92, 198, 233, 0));
+    font-size: 22px;
+}
+a{
+    text-decoration: none;
+}
+
+.crossfit{
+    text-align: left;
+    height: 300px;
+    width: 490px;
+    background-image: url(../img/backfccf.jpg);
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    grid-area: fcrossfit;
+}
+.fotoCrossfit{
+    height: 300px;
+    width: 490px;
+    padding-bottom: 150px;
+}
+.musculacion{
+    text-align: left;
+    height: 300px;
+    width: 490px;
+    background-image: url(../img/gimnasio.jpg);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    grid-area: fmuscu;
+}
+.gap{
+    text-align: left;
+    height: 300px;
+    width: 490px;
+    background-image: url(../img/gap.jpg);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-top: 50px;
+    grid-area: fgap;
+}
+.boxeo{
+    text-align: left;
+    height: 300px;
+    width: 490px;
+    background-image: url(../img/boxeo.jpg);
+    background-repeat: no-repeat;   
+    border-radius: 10px;
+    margin-top: 50px;
+    grid-area: fboxeo;
+}
+.LineaSuperior{
+    background-color: black;
+    display: grid;
+    grid-template-areas: 
+    "fcrossfit fmuscu"
+    "fgap fboxeo";
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    column-gap: 3%;
+    row-gap: 3%;
+    grid-area: acts;
+}
+.videos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.ubicacion{
+    font-size: 20px;
+    text-align: right;
+}
+h3{
+    display: inline;    
+    margin-top: 15px;
+}
+.acts1{
+    height: 100%;
+    width: 85%;
+    padding-top: 10px;
+    padding-left: 15%;
+    font-size: 20px;
+}
+.acts1 :hover{
+    transform: scale(1.4);
+    width: 100%;
+    font-style: italic;
+    cursor: pointer;
+    text-align: center;
+    background: radial-gradient(rgba(74, 133, 173, 0.601), rgba(198, 198, 198, 0.005));
+}
+.actname{
+    text-align: center;
+    padding: 5%;
+}
+.LogoWhatsapp{
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    /* transition: all 1s; */
+    animation-name: logo_whatsapp;
+    animation-iteration-count: 4;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+    animation-delay: 0;
+    box-shadow: 5px;
+}
+@keyframes logo_whatsapp{
+    0%{transform: scale(1);}
+    12%{transform: scale(1.12);}
+    25%{transform: scale(1.25);}
+    37%{transform: scale(1.37);}
+    50%{transform: scale(1.5);
+        filter: brightness(1.75);}
+    62%{transform: scale(1.37);}
+    75%{transform: scale(1.25);}
+    88%{transform: scale(1.12);}
+    100%{transform: scale(1);
+        filter: brightness(0,8);}
+
+}
+
+/*   Actividades   */
+
+  .mainacts{
+    background-color: black;
+    grid-area: acts; 
+} 
+.infoact{
+    padding-left: 30px;
+    padding-top: 30px;
+    color: aliceblue;
+}
+div h4{
+    font-size: 35px;
+} 
+.foto-gap{
+    height: 200px;
+    margin-top: 25px;
+    background-image: url(../img/gap\ actividades\ desktop.jpg);
+    background-repeat: no-repeat;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 8px;
+}
+.foto-crossfit{
+    height: 200px;
+    margin-top: 25px;
+    background-image: url(../img/crossfit\ atividades\ desktop.jpg);
+    background-repeat: no-repeat;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 8px;
+}
+.foto-gimnasio{
+    height: 200px;
+    margin-top: 25px;
+    background-image: url(../img/musculacion\ actividades\ desktop.jpg);
+    background-repeat: no-repeat;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 8px;
+}
+.foto-boxeo{
+    height: 200px;
+    margin-top: 25px;
+    background-image: url(../img/boxeo\ actividades\ resp.jpg);
+    background-repeat: no-repeat;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 8px;
+}
+
+
+/*   Planes   */
+
+h2{
+    font-size: 40px;
+    margin-bottom: 75px;
+    padding-left: 50px;
+}
+.tituloplanes{
+    font-size: 32px;
+    text-align: left;  
+    margin-bottom: 25px;        
+}
+.explicacionPlan{  
+    text-align: center;
+    width: 1100px;
+    margin-top: 0;
+    font-size: 20px;
+}
+.tipoPlan{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 85%;
+    margin-bottom: 2%;
+    margin-left: 4%;
+    border-radius: 8px;
+}
+.tipoPlan__paselions{
+    background-color: rgb(126, 184, 243);
+}
+.tipoPlan__24{
+    background-color: rgb(60, 115, 174);
+}
+.tipoPlan__12{
+    background-color: beige;
+}
+.tipoPlan__8{
+    background-color: lightblue;
+}
+.tipoPlan__musculacion{
+    background-color: rgb(43, 150, 226);
+}
+.mainplanes{
+    background-color: black;
+    margin-top: 0px;
+    padding-top: 50px;
+    margin-bottom: 0;
+    grid-area: acts;
+}
+.aclaracion{
+    width: 90%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: darkgrey;
+}
+
+
+
+/*   Footer   */
+
+footer{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    color: rgb(193, 193, 193);
+    margin-top: 0;
+    grid-area: footer;
+}
+
+/*   Contacto   */
+
+.mainContacto{
+    margin-top: 0;
+    padding-top: 50px;
+    margin-left: 35px;
+}
+form{
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-bottom: 50px;
+}
+.button{
+    background: linear-gradient(to right, rgb(35, 148, 253), rgb(151, 179, 211));
+}
+.button:hover{
+    background: linear-gradient(to right, blue, rgb(49, 41, 199));
+    box-shadow: 25px;
+}
+.CajaForm{
+    border: 2px solid rgb(45, 101, 185);
+    border-radius: 5px;
+}
+
+/*    Movil   */
+
+@media (max-width: 576px){
+    body{
+        width: 100%; 
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    h1{
+    color: rgb(172, 178, 183);
+    
+    padding-bottom: 5px;
+    
+    margin-bottom: 0;
+    font-size: 45px;
+    width: 80%;
+    }
+    .ContenedorAnimacion{
+        overflow-x: hidden;
+        max-width: 100%;
+
+    }
+    .mainIndex{
+        grid-template-columns: 100%;
+        justify-items: center;
+    }
+    .LineaSuperior{
+        grid-template-columns:100%;
+        grid-template-areas:
+        "fcrossfit"
+        "fmuscu"
+        "fgap"  
+        "fboxeo";
+        justify-items: center;
+        row-gap: 8px;
+    }
+    .infoHeader{
+        background-image: url(../img/pexels-leon-ardho-2468366.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        text-align: center;
+    }
+    .multimedia{
+        grid-template-columns: 100%;
+        grid-area: multimedia;
+        width: 90%;
+        height: 150px;
+    }
+    .mapa{
+        grid-template-columns: 100%;
+        grid-area: mapa;
+        width: 90%;
+    }
+    .header{
+        grid-template-columns: 100%;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    nav ul li{
+        display: block;
+    }
+  
+    .footer{
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+    }
+    .texto-explicativo{
+        width:fit-content;
+        height: fit-content;
+        display: none;
+    }
+    .videos{
+        grid-template-columns: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .crossfit{
+        text-align: center;
+        grid-area: fcrossfit;
+        width: 80%;
+    }
+    .gap{
+        text-align: center;
+        margin-top: 0;
+        width: 80%;
+    }
+    .boxeo{
+        text-align: center;
+        margin-top: 0;
+        width: 80%;
+    }
+    .musculacion{
+        text-align: center;
+        width: 80%;
+    }
+    .acts1{
+        text-align: center;
+        width: auto;
+        font-size: 16px;
+        padding: 20px;
+        }
+    .acts1 :hover{
+        width: 75%;
+        margin-left: 13%;
+    }
+    nav{
+        margin: 0px;
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+    #logoprincipal{
+    
+        width: 100%;
+        padding: 10px;
+        margin-left: 20px;
+    }
+    h3{
+    display: block;
+    margin-top: 15px;  
+    }
+    .ubicacion{
+        text-align: center;
+    }
+    .actname{
+        padding-bottom: 0;
+    }
+    .LogoWhatsapp{
+        height: 40px;
+        width: 40px;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        /* transition: all 1s; */
+        animation-name: logo_whatsapp;
+        animation-iteration-count: 4;
+        animation-timing-function: ease-in;
+        animation-duration: 1.5s;
+        animation-delay: 0;
+        box-shadow: 5px;
+    }
+
+    /*  Actividades  */
+
+    .mainacts{
+        background-color: black;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-area: acts;
+        justify-items: center;
+    }
+    .redondear{
+        display: none;
+    }
+    .explicaciones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .infoact{
+        padding-left: 0;
+        padding-top: 0;
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    div h4{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 5px;
+        }
+    div h3{
+            font-size: 30px;
+        }
+    .mainacts{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .infoact__descripcion{
+        text-align: center;
+        font-size: 20x;
+    }
+    .row{
+        margin-bottom: 10%;
+    }
+    
+
+    /*   Contacto y Se parte  */
+
+    .mainContacto{
+        width: 90%;
+    }
+    .h3separte{
+        width: 90%;
+        text-align: left;
+    }
+    form{
+        text-align: center;
+        margin-left: 1%;
+    }
+
+    /*   Planes   */
+    .mainplanes{
+        background-image: none;
+        background-color: rgb(0, 0, 0);     
+        margin-top: 0px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        grid-area: acts;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        display: none;
+    }
+    .tipoPlan{
+        background-color: aquamarine;
+        width: 90%;
+        margin: 5px;
+        height: fit-content;
+        border-radius: 10px;
+    }
+    .explicacionPlan{  
+        text-align: center;
+        width: 90%;
+        margin-top: 0;
+    }
+    .aclaracion{
+        width: 90%;
+    }
+    .tituloplanes{
+        text-align: left;
+        font-size: 40px;
+    }
+    .tipoPlan__paselions{
+        background-color: rgb(126, 184, 243);
+    }
+    .tipoPlan__24{
+        background-color: rgb(60, 115, 174);
+    }
+    .tipoPlan__12{
+        background-color: beige;
+    }
+    .tipoPlan__8{
+        background-color: lightblue;
+    }
+    .tipoPlan__musculacion{
+        background-color: rgb(43, 150, 226);
+    }
+}

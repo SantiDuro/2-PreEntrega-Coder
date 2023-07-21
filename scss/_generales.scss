@@ -1,0 +1,79 @@
+/*   Header   */
+header{
+    background-color: rgb(227, 227, 227);
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    grid-area: header;
+    justify-content: space-between;
+    #logoprincipal{
+    
+        height: 130px;
+        padding: 10px;
+        margin-left: 20px;
+    }
+}
+
+.LogoWhatsapp{
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    /* transition: all 1s; */
+    animation-name: logo_whatsapp;
+    animation-iteration-count: 4;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+    animation-delay: 0;
+    box-shadow: 5px;
+}
+@keyframes logo_whatsapp{
+    0%{transform: scale(1);}
+    12%{transform: scale(1.12);}
+    25%{transform: scale(1.25);}
+    37%{transform: scale(1.37);}
+    50%{transform: scale(1.5);
+        filter: brightness(1.75);}
+    62%{transform: scale(1.37);}
+    75%{transform: scale(1.25);}
+    88%{transform: scale(1.12);}
+    100%{transform: scale(1);
+        filter: brightness(0,8);}
+
+}
+
+
+@media (max-width: 576px){
+    .LogoWhatsapp{
+        height: 40px;
+        width: 40px;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        /* transition: all 1s; */
+        animation-name: logo_whatsapp;
+        animation-iteration-count: 4;
+        animation-timing-function: ease-in;
+        animation-duration: 1.5s;
+        animation-delay: 0;
+        box-shadow: 5px;
+    }
+    body{
+        width: 100%; 
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/*   Footer   */
+
+footer{
+    background-color: $primary-background;
+    padding: 10px;
+    color: rgb(193, 193, 193);
+    margin-top: 0;
+    grid-area: footer;
+}

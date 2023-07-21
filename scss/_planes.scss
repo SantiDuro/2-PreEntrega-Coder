@@ -1,0 +1,126 @@
+/*   Planes   */
+.mainplanes{
+    background-color: $primary-background;
+    margin-top: 0px;
+    padding-top: 50px;
+    margin-bottom: 0;
+    grid-area: acts;
+    h1{
+        color: rgb(129, 129, 129);
+        width: 500px;
+        height: 250px;
+        font-size: 65px;
+        padding-top: 30px;
+        padding-left: 35px;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    h2{
+        font-size: 40px;
+        margin-bottom: 75px;
+        padding-left: 50px;
+    }
+    .tituloplanes{
+        font-size: 32px;
+        text-align: left;  
+        margin-bottom: 25px;        
+    }
+    .explicacionPlan{  
+        text-align: center;
+        width: 90%;
+        margin-top: 0;
+        font-size: 20px;
+    }
+    .tipoPlan{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        width: 85%;
+        margin-bottom: 2%;
+        margin-left: 4%;
+        border-radius: 8px;
+    }
+    .tipoPlan__paselions{
+        background-color: rgb(126, 184, 243);
+        }
+        .tipoPlan__24{
+            background-color: rgb(60, 115, 174);
+        } 
+           
+        .tipoPlan__12{
+            background-color: beige;
+        }
+        .tipoPlan__8{
+            background-color: lightblue;
+        }
+        .tipoPlan__musculacion{
+            background-color: rgb(43, 150, 226);
+        }
+    .aclaracion{
+        width: 90%;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+        color: darkgrey;
+    }
+}
+
+/*    Movil   */
+
+@media (max-width: 576px){
+    .mainplanes{
+        background-image: none;
+        background-color: rgb(0, 0, 0);     
+        margin-top: 0px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        grid-area: acts;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        display: none;
+    }
+    .tipoPlan{
+        background-color: aquamarine;
+        width: 90%;
+        margin: 5px;
+        height: fit-content;
+        border-radius: 10px;
+    }
+    .explicacionPlan{  
+        text-align: center;
+        width: 90%;
+        margin-top: 0;
+    }
+    .aclaracion{
+        width: 90%;
+    }
+    .tituloplanes{
+        text-align: left;
+        font-size: 40px;
+    }
+    .tipoPlan__paselions{
+        background-color: rgb(126, 184, 243);
+    }
+    .tipoPlan__24{
+        background-color: rgb(60, 115, 174);
+    }
+    .tipoPlan__12{
+        background-color: beige;
+    }
+    .tipoPlan__8{
+        background-color: lightblue;
+    }
+    .tipoPlan__musculacion{
+        background-color: rgb(43, 150, 226);
+    }
+}

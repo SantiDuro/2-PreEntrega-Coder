@@ -1,0 +1,49 @@
+/*   Contacto y Se parte   */
+
+.mainContacto{
+    margin-top: 0;
+    padding-top: 50px;
+    background-color: $primary-background;
+    width: 100%;
+    grid-area: acts;
+    .h3separte{
+        padding-left: 5%;
+        width: 75%;
+        color: rgb(172, 178, 183);
+    
+    }
+}
+form{
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-bottom: 50px;
+}
+.button{
+    background: linear-gradient(to right, rgb(35, 148, 253), rgb(151, 179, 211));
+}
+.button:hover{
+    background: linear-gradient(to right, blue, rgb(49, 41, 199));
+    box-shadow: 25px;
+}
+.CajaForm{
+    border: 2px solid rgb(23 37 57);
+    border-radius: 5px;
+    background-color: rgb(151 172 184);
+}
+
+/*    Movil   */
+
+@media (max-width: 576px){
+    .mainContacto{
+        width: 100%;
+    }
+    .h3separte{
+        width: 90%;
+        text-align: left;
+    }
+    form{
+        text-align: center;
+        margin-left: 1%;
+    }
+}
+

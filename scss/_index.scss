@@ -1,0 +1,257 @@
+/*    Main   */
+.mainIndex{ 
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: textoe;
+    h1{
+        color: rgb(129, 129, 129);
+        width: 500px;
+        height: 250px;
+        font-size: 65px;
+        padding-top: 30px;
+        padding-left: 35px;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .infoHeader{
+        background-image: url(../img/pexels-leon-ardho-2468366.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        .texto-explicativo{
+            padding: 1%;
+            margin: 1%;
+            height: 200px;
+            background-color: #dddcf512;
+            border-radius: 15px;
+            width: 85%;
+            font-size: 21px;
+            padding-left: 35px;
+            margin-top: 25px;
+            margin-bottom: 0;
+            color: rgb(0, 0, 0);
+            }
+    }
+    .videos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        div{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5;
+            &:hover{
+            transform: scale(1.1);
+            }
+        }
+        h3{
+            display: inline;    
+            margin-top: 15px;
+        }
+        .ubicacion{
+            font-size: 20px;
+            text-align: right;
+        }
+        .multimedia{
+            height: 200px;
+            border-top: solid 2px rgb(14, 12, 12);
+            border-bottom: solid 2px black;
+            border-left: solid 2px black;;
+            border-right: solid 2px black;
+            grid-area: multimedia;
+        }
+        .mapa{
+            width: 510px;
+            height: 200px;
+            border-top: solid 2px black;
+            border-bottom: solid 2px black;
+            border-left: solid 2px black;;
+            border-right: solid 2px black;
+            grid-area: multimedia;
+        }
+    }
+    main{
+            a{
+            margin-bottom: 0;
+            padding-bottom: 0;
+            } 
+    }
+    .LineaSuperior{
+            background-color: $primary-background;
+            display: grid;
+            grid-template-areas: 
+            "fcrossfit fmuscu"
+            "fgap fboxeo";
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-bottom: 10px;
+            justify-items: center;
+            align-content: center;
+            justify-content: center;
+            column-gap: 3%;
+            row-gap: 3%;
+            grid-area: acts;
+        }
+    .card{
+        background-color: rgb(171, 171, 171);
+        padding: 0;
+        transition: all 1s;
+        &:hover{
+            transform: scale(1.1);
+        }
+        .card-title{
+            color: black;
+            font-size: 34px;
+        }
+        .card-text{
+            color: black;
+            font-size: 18px;
+            margin-top: 9%;
+            &:hover{
+                background: radial-gradient(ellipse, rgba(65, 171, 232, 0.423), rgba(92, 198, 233, 0));
+                font-size: 22px;
+            }
+            }    
+        a{ 
+           text-decoration: none;
+        }
+        }
+}
+
+/*    Movil   */
+
+@media (max-width: 576px){
+
+    .mainIndex{
+        grid-template-columns: 100%;
+        justify-items: center;
+        h1{
+            color: rgb(172, 178, 183);
+            padding-bottom: 5px;
+            margin-bottom: 0;
+            font-size: 45px;
+            width: 80%;
+            }
+        .infoHeader{
+            background-image: url(../img/pexels-leon-ardho-2468366.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            text-align: center;
+            .texto-explicativo{
+                width:fit-content;
+                height: fit-content;
+                display: none;
+            }
+            }
+        .videos{
+                grid-template-columns: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                div{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all 0.5;
+                    &:hover{
+                    transform: scale(1.1);
+                    }
+                    }
+                h3{
+                    display: block;
+                    margin-top: 15px;  
+                    }
+                .ubicacion{
+                  text-align: center;
+                    }
+                .multimedia{
+                    grid-template-columns: 100%;
+                    grid-area: multimedia;
+                    width: 90%;
+                    height: 150px;
+                    }
+                .mapa{
+                    grid-template-columns: 100%;
+                    grid-area: mapa;
+                    width: 90%;
+                    }
+                
+            }
+            .LineaSuperior{
+                grid-template-columns:100%;
+                grid-template-areas:
+                "fcrossfit"
+                "fmuscu"
+                "fgap"  
+                "fboxeo";
+                justify-items: center;
+                row-gap: 8px;
+            }
+    }
+    
+    .ContenedorAnimacion{
+        overflow-x: hidden;
+        max-width: 100%;
+
+    }
+    
+    
+    
+    
+    .header{
+        grid-template-columns: 100%;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    nav ul li{
+        display: block;
+    }
+  
+    .footer{
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+    }
+    
+    
+    
+    .acts1{
+        text-align: center;
+        width: auto;
+        font-size: 16px;
+        padding: 20px;
+        }
+    .acts1 :hover{
+        width: 75%;
+        margin-left: 13%;
+    }
+    nav{
+        margin: 0px;
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+    #logoprincipal{
+    
+        width: 100%;
+        padding: 10px;
+        margin-left: 20px;
+    }
+    
+    .actname{
+        padding-bottom: 0;
+    }
+}

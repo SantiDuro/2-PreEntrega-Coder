@@ -1,0 +1,120 @@
+/*   Actividades   */
+hr{
+    color: aqua;
+}
+.mainacts{
+    background-color: $primary-background;
+    grid-area: acts; 
+    h1{
+        color: rgb(129, 129, 129);
+        width: 500px;
+        height: 250px;
+        font-size: 65px;
+        padding-top: 30px;
+        padding-left: 35px;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: left;
+    }
+} 
+.infoact{
+    padding-left: 30px;
+    padding-top: 30px;
+    color: aliceblue;
+}
+div h4{
+    font-size: 35px;
+} 
+.foto-gap{
+    height: 200px;
+    margin-top: 25px;
+    background-image: url(../img/gap\ actividades\ desktop.jpg);
+    background-repeat: no-repeat;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 8px;
+}
+.foto-crossfit{
+    height: 200px;
+    margin-top: 25px;
+    background-image: url(../img/crossfit\ atividades\ desktop.jpg);
+    background-repeat: no-repeat;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 8px;
+}
+.foto-gimnasio{
+    height: 200px;
+    margin-top: 25px;
+    background-image: url(../img/musculacion\ actividades\ desktop.jpg);
+    background-repeat: no-repeat;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 8px;
+}
+.foto-boxeo{
+    height: 200px;
+    margin-top: 25px;
+    background-image: url(../img/boxeo\ actividades\ resp.jpg);
+    background-repeat: no-repeat;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 8px;
+}
+
+/*    Movil   */
+
+@media (max-width: 576px){
+    .mainacts{
+        background-color: black;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-area: acts;
+        justify-items: center;
+        h1 {
+            color: rgb(129, 129, 129);
+            /* width: 500px; */
+            height: 100%;
+            font-size: 50px;
+            padding-top: 30px;
+            padding-left: 35px;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: left;
+        }
+    }
+    .redondear{
+        display: none;
+    }
+    .explicaciones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .infoact{
+        padding-left: 0;
+        padding-top: 0;
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    div h4{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 5px;
+        }
+    div h3{
+            font-size: 30px;
+        }
+    .mainacts{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .infoact__descripcion{
+        text-align: center;
+        font-size: 20x;
+    }
+    .row{
+        margin-bottom: 10%;
+    }
+}
