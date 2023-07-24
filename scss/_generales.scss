@@ -54,6 +54,17 @@ footer{
     margin-top: 0;
     grid-area: footer;
 }
+.Footer{
+    display: flex;
+    justify-content:space-between;
+    .LogosRedes{
+        padding-left: 5%;
+        .LogoInstagram{
+            width: 40px;
+        }
+    }
+
+}  
 
 @media (max-width: 576px){
     .header{
@@ -63,14 +74,11 @@ footer{
         align-items: center;
         justify-content: center;
     }
-    
     body{
         width: 100%; 
         display: grid;
         grid-template-columns: 1fr;
     }
-
-
     .LogoWhatsapp{
         height: 40px;
         width: 40px;
@@ -98,6 +106,9 @@ footer{
         width: 100%;
         padding: 10px;
         margin-left: 20px;
+    }
+    .Footer .LogosRedes .LogoInstagram {
+        width: 22px;
     }
 }
 

@@ -599,6 +599,17 @@ footer {
   grid-area: footer;
 }
 
+.Footer {
+  display: flex;
+  justify-content: space-between;
+}
+.Footer .LogosRedes {
+  padding-left: 5%;
+}
+.Footer .LogosRedes .LogoInstagram {
+  width: 40px;
+}
+
 @media (max-width: 576px) {
   .header {
     grid-template-columns: 100%;
@@ -638,6 +649,9 @@ footer {
     width: 100%;
     padding: 10px;
     margin-left: 20px;
+  }
+  .Footer .LogosRedes .LogoInstagram {
+    width: 22px;
   }
 }
 
