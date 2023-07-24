@@ -80,17 +80,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        h1 {
-            color: rgb(129, 129, 129);
-            /* width: 500px; */
-            height: 100%;
-            font-size: 50px;
-            padding-top: 30px;
-            padding-left: 35px;
-            margin-top: 0;
+        h1{
+            color: rgb(172, 178, 183);
+            padding-bottom: 5px;
             margin-bottom: 0;
-            text-align: left;
-        }
+            font-size: 45px;
+            width: 80%;
+            height:fit-content;
+            }
         .ContenedorAnimacion{
             overflow-x: hidden;
             max-width: $full-width;
