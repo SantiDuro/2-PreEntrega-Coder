@@ -32,11 +32,15 @@
     }
     .CardsSeparte{
         display: flex;
-        justify-content: space-around;
-        h3{
-            text-align: center;
-            padding: 3%;
+        h4{
+            text-align: left;
+            font-size: 36px;
         }
+        #CROSSFIT{
+            padding: 3%;
+            color: $color-titulos;
+        }
+
     }
     .h3separte{
         padding-left: 5%;
@@ -85,7 +89,18 @@
             color: $color-titulos;
             font-size: 20px;
             text-align: center;
-        }  
+        }
+        .CardsSeparte{
+            h4 {
+            text-align: center;
+            padding: 3%;
+            font-size: 28px;
+            }   
+            .infoact__descripcion{
+                text-align: center;
+                font-size: 18px;
+            }
+        }
         h5{
                padding-top: 8%;
               font-size: 20px;

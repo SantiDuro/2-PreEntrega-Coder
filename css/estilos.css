@@ -259,11 +259,14 @@ hr {
 }
 .mainContacto .CardsSeparte {
   display: flex;
-  justify-content: space-around;
 }
-.mainContacto .CardsSeparte h3 {
-  text-align: center;
+.mainContacto .CardsSeparte h4 {
+  text-align: left;
+  font-size: 36px;
+}
+.mainContacto .CardsSeparte #CROSSFIT {
   padding: 3%;
+  color: rgb(164, 164, 164);
 }
 .mainContacto .h3separte {
   padding-left: 5%;
@@ -311,6 +314,15 @@ hr {
     color: rgb(164, 164, 164);
     font-size: 20px;
     text-align: center;
+  }
+  .mainContacto .CardsSeparte h4 {
+    text-align: center;
+    padding: 3%;
+    font-size: 28px;
+  }
+  .mainContacto .CardsSeparte .infoact__descripcion {
+    text-align: center;
+    font-size: 18px;
   }
   .mainContacto h5 {
     padding-top: 8%;
