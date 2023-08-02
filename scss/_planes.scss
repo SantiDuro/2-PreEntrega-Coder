@@ -1,4 +1,30 @@
 /*   Planes   */
+
+/*   Maps de planes   */
+$planes: (
+    paselions: rgb(126, 184, 243),
+    pase24: rgb(60, 115, 174),
+    pase12: beige,
+    pase8: lightblue,
+    pasemusculacion: rgb(43, 150, 226)
+);
+
+.tipoPlan__paselions{
+    background: map-get($planes , paselions);
+}
+.tipoPlan__24{
+    background: map-get($planes , pase24);
+}
+.tipoPlan__12{
+    background: map-get($planes, pase12 );
+}
+.tipoPlan__8{
+    background: map-get($planes , pase8);
+}
+.tipoPlan__musculacion{
+    background: map-get($planes , pasemusculacion);
+}
+
 .mainplanes{
     background-color: $primary-background;
     margin-top: 0px;
@@ -36,23 +62,7 @@
         margin-bottom: 2%;
         margin-left: 4%;
         border-radius: 8px;
-    }
-    .tipoPlan__paselions{
-        background-color: rgb(126, 184, 243);
-        }
-        .tipoPlan__24{
-            background-color: rgb(60, 115, 174);
-        } 
-           
-        .tipoPlan__12{
-            background-color: beige;
-        }
-        .tipoPlan__8{
-            background-color: lightblue;
-        }
-        .tipoPlan__musculacion{
-            background-color: rgb(43, 150, 226);
-        }
+    }    
     .aclaracion{
         width: 90%;
         padding-bottom: 50px;

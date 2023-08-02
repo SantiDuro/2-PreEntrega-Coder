@@ -18,47 +18,29 @@ hr {
   margin-bottom: 0;
   text-align: left;
 }
-
-.infoact {
+.mainacts .infoact {
   padding-left: 30px;
   padding-top: 30px;
   color: aliceblue;
 }
-
-div h4 {
+.mainacts div h4 {
   font-size: 35px;
 }
-
-.foto-gap {
+.mainacts .foto-gap, .mainacts .foto-boxeo, .mainacts .foto-gimnasio, .mainacts .foto-crossfit {
   height: 200px;
   margin-top: 25px;
+  background-repeat: no-repeat;
+  border-radius: 8px;
   background-image: url(../img/gap\ actividades\ desktop.jpg);
-  background-repeat: no-repeat;
-  border-radius: 8px;
 }
-
-.foto-crossfit {
-  height: 200px;
-  margin-top: 25px;
+.mainacts .foto-crossfit {
   background-image: url(../img/crossfit\ atividades\ desktop.jpg);
-  background-repeat: no-repeat;
-  border-radius: 8px;
 }
-
-.foto-gimnasio {
-  height: 200px;
-  margin-top: 25px;
+.mainacts .foto-gimnasio {
   background-image: url(../img/musculacion\ actividades\ desktop.jpg);
-  background-repeat: no-repeat;
-  border-radius: 8px;
 }
-
-.foto-boxeo {
-  height: 200px;
-  margin-top: 25px;
+.mainacts .foto-boxeo {
   background-image: url(../img/boxeo\ actividades\ resp.jpg);
-  background-repeat: no-repeat;
-  border-radius: 8px;
 }
 
 /*    Movil   */
@@ -110,6 +92,27 @@ div h4 {
   }
 }
 /*   Planes   */
+/*   Maps de planes   */
+.tipoPlan__paselions {
+  background: rgb(126, 184, 243);
+}
+
+.tipoPlan__24 {
+  background: rgb(60, 115, 174);
+}
+
+.tipoPlan__12 {
+  background: beige;
+}
+
+.tipoPlan__8 {
+  background: lightblue;
+}
+
+.tipoPlan__musculacion {
+  background: rgb(43, 150, 226);
+}
+
 .mainplanes {
   background-color: black;
   margin-top: 0px;
@@ -148,21 +151,6 @@ div h4 {
   margin-bottom: 2%;
   margin-left: 4%;
   border-radius: 8px;
-}
-.mainplanes .tipoPlan__paselions {
-  background-color: rgb(126, 184, 243);
-}
-.mainplanes .tipoPlan__24 {
-  background-color: rgb(60, 115, 174);
-}
-.mainplanes .tipoPlan__12 {
-  background-color: beige;
-}
-.mainplanes .tipoPlan__8 {
-  background-color: lightblue;
-}
-.mainplanes .tipoPlan__musculacion {
-  background-color: rgb(43, 150, 226);
 }
 .mainplanes .aclaracion {
   width: 90%;
@@ -661,6 +649,11 @@ footer .Footer .LogosRedes .LogoInstagram {
     align-items: center;
     justify-content: center;
   }
+  .header #logoprincipal {
+    padding: 10px;
+    margin-left: 20px;
+    height: 100px;
+  }
   body {
     width: 100%;
     display: grid;
@@ -691,11 +684,6 @@ footer .Footer .LogosRedes .LogoInstagram {
   footer .Footer .LogosRedes .LogoInstagram {
     width: 22px;
   }
-}
-#logoprincipal {
-  width: 100%;
-  padding: 10px;
-  margin-left: 20px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

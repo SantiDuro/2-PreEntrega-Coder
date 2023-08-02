@@ -16,43 +16,37 @@ hr{
         margin-bottom: 0;
         text-align: left;
     }
+    .infoact{
+        padding-left: 30px;
+        padding-top: 30px;
+        color: aliceblue;
+    }
+    div h4{
+        font-size: 35px;
+    } 
+    @mixin tamaños($alto, $margen){
+        height: $alto;
+        margin-top: $margen;
+    }
+    .foto-gap{
+        @include tamaños(200px, 25px);
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        background-image: url(../img/gap\ actividades\ desktop.jpg);
+    }
+    .foto-crossfit{
+        @extend .foto-gap;
+        background-image: url(../img/crossfit\ atividades\ desktop.jpg);
+    }
+    .foto-gimnasio{
+        @extend .foto-gap;
+        background-image: url(../img/musculacion\ actividades\ desktop.jpg);
+    }
+    .foto-boxeo{
+        @extend .foto-gap;
+        background-image: url(../img/boxeo\ actividades\ resp.jpg);
+    }
 } 
-.infoact{
-    padding-left: 30px;
-    padding-top: 30px;
-    color: aliceblue;
-}
-div h4{
-    font-size: 35px;
-} 
-.foto-gap{
-    height: 200px;
-    margin-top: 25px;
-    background-image: url(../img/gap\ actividades\ desktop.jpg);
-    background-repeat: no-repeat;
-    border-radius: 8px;
-}
-.foto-crossfit{
-    height: 200px;
-    margin-top: 25px;
-    background-image: url(../img/crossfit\ atividades\ desktop.jpg);
-    background-repeat: no-repeat;
-    border-radius: 8px;
-}
-.foto-gimnasio{
-    height: 200px;
-    margin-top: 25px;
-    background-image: url(../img/musculacion\ actividades\ desktop.jpg);
-    background-repeat: no-repeat;
-    border-radius: 8px;
-}
-.foto-boxeo{
-    height: 200px;
-    margin-top: 25px;
-    background-image: url(../img/boxeo\ actividades\ resp.jpg);
-    background-repeat: no-repeat;
-    border-radius: 8px;
-}
 
 /*    Movil   */
 
