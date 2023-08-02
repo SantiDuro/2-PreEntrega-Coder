@@ -6,7 +6,7 @@
     margin-bottom: 0;
     grid-area: acts;
     h1{
-        color: rgb(129, 129, 129);
+        color: $color-titulos;
         width: 500px;
         height: 250px;
         font-size: 65px;
@@ -80,6 +80,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        .ContenedorAnimacion{
+            overflow-x: hidden;
+            max-width: $full-width;
+    
+        }
         h1{
             color: rgb(172, 178, 183);
             padding-bottom: 5px;
@@ -88,44 +93,39 @@
             width: 80%;
             height:fit-content;
             }
-        .ContenedorAnimacion{
-            overflow-x: hidden;
-            max-width: $full-width;
-    
-        }
-    }
-    .tipoPlan{
-        background-color: aquamarine;
-        width: 90%;
-        margin: 5px;
-        height: fit-content;
-        border-radius: 10px;
-    }
-    .explicacionPlan{  
-        text-align: center;
-        width: 90%;
-        margin-top: 0;
-    }
-    .aclaracion{
-        width: 90%;
-    }
-    .tituloplanes{
-        text-align: left;
-        font-size: 40px;
-    }
-    .tipoPlan__paselions{
-        background-color: rgb(126, 184, 243);
-    }
-    .tipoPlan__24{
-        background-color: rgb(60, 115, 174);
-    }
-    .tipoPlan__12{
-        background-color: beige;
-    }
-    .tipoPlan__8{
-        background-color: lightblue;
-    }
-    .tipoPlan__musculacion{
-        background-color: rgb(43, 150, 226);
+        .tipoPlan{
+                background-color: aquamarine;
+                width: 90%;
+                margin: 5px;
+                height: fit-content;
+                border-radius: 10px;
+                .tituloplanes{
+                    text-align: left;
+                    font-size: 40px;
+                }
+                .explicacionPlan{  
+                    text-align: center;
+                    width: 90%;
+                    margin-top: 0;
+                }
+            }
+        .tipoPlan__paselions{
+                background-color: rgb(126, 184, 243);
+            }
+        .tipoPlan__24{
+                background-color: rgb(60, 115, 174);
+            }
+        .tipoPlan__12{
+                background-color: beige;
+            }
+        .tipoPlan__8{
+                background-color: lightblue;
+            }
+        .tipoPlan__musculacion{
+                background-color: rgb(43, 150, 226);
+            }
+        .aclaracion{
+                width: 90%;
+            }
     }
 }

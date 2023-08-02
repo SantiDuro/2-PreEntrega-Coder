@@ -4,46 +4,97 @@
     margin-top: 0;
     padding-top: 50px;
     background-color: $primary-background;
-    width: 100%;
+    width: $full-width;
     grid-area: acts;
+    h1{
+        color: $color-titulos;
+        width: 500px;
+        font-size: 60px;
+        padding-top: 30px;
+        padding-left: 35px;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .FotoStaff1{
+        height: 200px;
+        margin-top: 25px;
+        background-image: url(../img/staff1.jpg);
+        background-repeat: no-repeat;
+        border-radius: 8px;
+    }
+    .FotoStaff2{
+        height: 200px;
+        margin-top: 25px;
+        background-image: url(../img/staff2.jpg);
+        background-repeat: no-repeat;
+        border-radius: 8px;
+    }
+    .CardsSeparte{
+        display: flex;
+        justify-content: space-around;
+        h3{
+            text-align: center;
+            padding: 3%;
+        }
+    }
     .h3separte{
         padding-left: 5%;
-        width: 75%;
-        color: rgb(172, 178, 183);
-    
+        width: 90%;
+        color: $color-titulos;
+        font-size: 30px;
+    }
+    h5{
+        padding-top: 5%;
+        width: 90%;
+        color: $color-titulos;
+        font-size: 30px;
+    }
+    form{
+        margin-top: 50px;
+        margin-left: 75px;
+        margin-bottom: 50px;
+        .CajaForm{
+            border: 2px solid rgb(23 37 57);
+            border-radius: 5px;
+            background-color: rgb(151 172 184);
+        }
+        .button{
+            background: linear-gradient(to right, rgb(35, 148, 253), rgb(151, 179, 211));
+            &:hover{
+                background: linear-gradient(to right, blue, rgb(49, 41, 199));
+                box-shadow: 25px;
+            }
     }
 }
-form{
-    margin-top: 50px;
-    margin-left: 75px;
-    margin-bottom: 50px;
-}
-.button{
-    background: linear-gradient(to right, rgb(35, 148, 253), rgb(151, 179, 211));
-}
-.button:hover{
-    background: linear-gradient(to right, blue, rgb(49, 41, 199));
-    box-shadow: 25px;
-}
-.CajaForm{
-    border: 2px solid rgb(23 37 57);
-    border-radius: 5px;
-    background-color: rgb(151 172 184);
 }
 
 /*    Movil   */
 
 @media (max-width: 576px){
     .mainContacto{
-        width: 100%;
-    }
-    .h3separte{
-        width: 90%;
-        text-align: left;
-    }
-    form{
-        text-align: center;
-        margin-left: 1%;
+        width: $full-width;
+        h1{
+            width: 90%;
+            text-align: left;
+            font-size: 50px;
+        }
+        .h3separte{
+            padding-left: 5%;
+            width: 90%;
+            color: $color-titulos;
+            font-size: 20px;
+            text-align: center;
+        }  
+        h5{
+               padding-top: 8%;
+              font-size: 20px;
+              text-align: center;
+        }
+        form{
+            text-align: center;
+            margin-left: 1%;
+        }
     }
 }
 

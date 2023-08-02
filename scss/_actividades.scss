@@ -6,7 +6,7 @@ hr{
     background-color: $primary-background;
     grid-area: acts; 
     h1{
-        color: rgb(129, 129, 129);
+        color: $color-titulos;
         width: 500px;
         height: 250px;
         font-size: 65px;
@@ -30,7 +30,6 @@ div h4{
     margin-top: 25px;
     background-image: url(../img/gap\ actividades\ desktop.jpg);
     background-repeat: no-repeat;
-    border: 1px solid rgb(189, 189, 189);
     border-radius: 8px;
 }
 .foto-crossfit{
@@ -38,7 +37,6 @@ div h4{
     margin-top: 25px;
     background-image: url(../img/crossfit\ atividades\ desktop.jpg);
     background-repeat: no-repeat;
-    border: 1px solid rgb(189, 189, 189);
     border-radius: 8px;
 }
 .foto-gimnasio{
@@ -46,7 +44,6 @@ div h4{
     margin-top: 25px;
     background-image: url(../img/musculacion\ actividades\ desktop.jpg);
     background-repeat: no-repeat;
-    border: 1px solid rgb(189, 189, 189);
     border-radius: 8px;
 }
 .foto-boxeo{
@@ -54,7 +51,6 @@ div h4{
     margin-top: 25px;
     background-image: url(../img/boxeo\ actividades\ resp.jpg);
     background-repeat: no-repeat;
-    border: 1px solid rgb(189, 189, 189);
     border-radius: 8px;
 }
 

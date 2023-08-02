@@ -5,7 +5,7 @@
     background-size: cover;
     grid-area: textoe;
     h1{
-        color: rgb(129, 129, 129);
+        color: $color-titulos;
         width: 500px;
         height: 250px;
         font-size: 65px;
@@ -130,7 +130,7 @@
 @media (max-width: 576px){
 
     .mainIndex{
-        grid-template-columns: 100%;
+        grid-template-columns: $full-width;
         justify-items: center;
         h1{
             color: rgb(172, 178, 183);
@@ -157,7 +157,7 @@
             }
             }
         .videos{
-                grid-template-columns: 100%;
+                grid-template-columns: $full-width;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
@@ -181,19 +181,19 @@
                   font-size: 16px;
                     }
                 .multimedia{
-                    grid-template-columns: 100%;
+                    grid-template-columns: $full-width;
                     grid-area: multimedia;
                     width: 90%;
                     height: 150px;
                     }
                 .mapa{
-                    grid-template-columns: 100%;
+                    grid-template-columns: $full-width;
                     grid-area: mapa;
                     width: 90%;
                     }
             }
             .LineaSuperior{
-                grid-template-columns:100%;
+                grid-template-columns: $full-width;
                 grid-template-areas:
                 "fcrossfit"
                 "fmuscu"

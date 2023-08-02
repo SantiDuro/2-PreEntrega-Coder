@@ -3,7 +3,7 @@ header{
     background-color: rgb(227, 227, 227);
     background-size: cover;
     display: flex;
-    width: 100%;
+    width: $full-width;
     grid-area: header;
     justify-content: space-between;
     #logoprincipal{
@@ -53,29 +53,29 @@ footer{
     color: rgb(193, 193, 193);
     margin-top: 0;
     grid-area: footer;
-}
-.Footer{
-    display: flex;
-    justify-content:space-between;
-    .LogosRedes{
-        padding-left: 5%;
-        .LogoInstagram{
-            width: 40px;
+    .Footer{
+        display: flex;
+        justify-content:space-between;
+        .LogosRedes{
+            padding-left: 5%;
+            .LogoInstagram{
+                width: 40px;
+            }
         }
-    }
-
-}  
+    
+    }  
+}
 
 @media (max-width: 576px){
     .header{
         grid-template-columns: 100%;
-        width: 100%;
+        width: $full-width;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
     body{
-        width: 100%; 
+        width: $full-width;
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -98,17 +98,17 @@ footer{
         grid-template-columns: 100%;
         align-items: center;
         justify-items: center;
-        width: 100%;
+        width: $full-width;
         font-size: 12px;
+        .Footer .LogosRedes .LogoInstagram {
+            width: 22px;
+        }
+    }
     }
     #logoprincipal{
-        width: 100%;
+        width: $full-width;
         padding: 10px;
         margin-left: 20px;
-    }
-    .Footer .LogosRedes .LogoInstagram {
-        width: 22px;
-    }
 }
 
 
